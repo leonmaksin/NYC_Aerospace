@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}Join{% endblock %}
+{% block main %}
+<div id="form-div-holder" class="full-width center-row-flex">
+    <form id="contact-form" action="/contact" method="POST" class="form column-start-flex">
+        <div id="form-title">Contact</div>
+        <div id="inputs-holder" class="column-start-flex">
+            <div class="names-inputs-holder start-row-flex">
+                <div class="fname-input-holder column-start-flex">
+                    <div class="input-title start-row-flex">First Name</div>
+                    <div class="input-holder">
+                        <input class="name-input" type="text" autocapitalize name="firstname" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="lname-input-holder column-start-flex">
+                    <div class="input-title start-row-flex">Last Name</div>
+                    <div class="input-holder">
+                        <input class="name-input" type="text" autocapitalize name="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+            </div>
+            <div class="email-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Email</div>
+                <div class="input-holder">
+                    <input class="email-input" name="email" type="email" placeholder="example@stuy.edu">
+                </div>
+            </div>
+            <div class="textarea-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Message</div>
+                <div class="input-holder" style="width: 100%">
+                    <textarea name="message" form="contact-form"></textarea>
+                </div>
+            </div>
+            <div class="submit-button-holder center-row-flex">
+                <div class="submit-button column-center-flex" onclick="document.getElementById('contact-form').submit();">Submit</div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

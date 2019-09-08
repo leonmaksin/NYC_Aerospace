@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block title %}Join{% endblock %}
+{% block main %}
+<div id="form-div-holder" class="full-width center-row-flex">
+    <form id="join-form" action="/join" method="POST" class="form column-start-flex">
+      <input type="hidden" name="type" value="student">
+        <div id="form-title">Join as a Student</div>
+        <div id="inputs-holder" class="column-start-flex">
+            <div class="names-inputs-holder start-row-flex">
+                <div class="fname-input-holder column-start-flex">
+                    <div class="input-title start-row-flex">First Name</div>
+                    <div class="input-holder">
+                        <input class="name-input" autocapitalize name="firstname" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="lname-input-holder column-start-flex">
+                    <div class="input-title start-row-flex">Last Name</div>
+                    <div class="input-holder">
+                        <input class="name-input" autocapitalize name="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+            </div>
+            <div class="email-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Email</div>
+                <div class="input-holder">
+                    <input class="email-input" name="email" type="email" placeholder="example@stuy.edu">
+                </div>
+            </div>
+            <div class="email-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">School</div>
+                <div class="input-holder">
+                    <input class="email-input" name="school" type="text" placeholder="Example HS">
+                </div>
+            </div>
+            <div class="email-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">School Address</div>
+                <div class="input-holder">
+                    <input class="email-input" name="school_address" type="text" placeholder="66 Example St">
+                </div>
+            </div>
+            <div class="email-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Student Address</div>
+                <div class="input-holder">
+                    <input class="email-input" name="address" type="text" placeholder="66 Example St">
+                </div>
+            </div>
+            <div class="project-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Interests</div>
+                <p style="font-size: 10px; margin:0px; margin-right: 2vw; margin-bottom: .5vw;">Please fill out any interests your students may have. If you have any suggestions for new teams please leave them in the "other" section.</p>
+                <div class="input-holder">
+                    <input type="checkbox" style="width: auto; margin: 0; margin-right: .75vw;" name="tarc">Tarc
+                </div>
+                <div class="input-holder">
+                    <input type="checkbox" style="width: auto; margin: 0; margin-right: .75vw;" name="cubesat">CubeSat
+                </div>
+                <div class="input-holder">
+                    <input type="checkbox" style="width: auto; margin: 0; margin-right: .75vw;" name="hprocketry">High Power Rocketry
+                </div>
+                <div class="input-holder">
+                    <input type="checkbox" style="width: auto; margin: 0; margin-right: .75vw;" name="weather_balloon">Weather Balloon
+                </div>
+                <div class="input-holder">
+                    <input type="checkbox" style="width: auto; margin: 0; margin-right: .75vw;" name="rocked">RockEd
+                </div>
+              </div>
+                <div class="email-input-holder input-group-holder column-start-flex">
+                    <div class="input-title start-row-flex"><input type="checkbox" style="width: auto; margin: 0; margin-right: .75vw;">Other</div>
+                    <div class="input-holder">
+                        <input class="email-input" name="suggestions" type="text" placeholder="Example project">
+                    </div>
+                </div>
+            <div class="textarea-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Please Identify Your Skillset</div>
+                <p style="font-size: 10px; margin:0px; margin-right: 2vw; margin-bottom: .5vw;">Please list all of your skills, any and all skills are welcome, from physics to technology to art skills.</p>
+                <div class="input-holder" style="width: 100%">
+                    <textarea name="skills" form="join-form"></textarea>
+                </div>
+            </div>
+            <div class="email-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Would you be interested in becoming a NYC Aerospace ambassador for your school?</div>
+                <div class="input-holder">
+                    <input name="ambassador" style="width: auto; margin: 0; margin-right: .75vw;" type="radio" value="yes">Yes
+                </div>
+                <div class="input-holder">
+                    <input name="ambassador" style="width: auto; margin: 0; margin-right: .75vw;" type="radio" value="no">No
+                </div>
+            </div>
+            <div class="textarea-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Any Questions or Comments?</div>
+                <div class="input-holder" style="width: 100%">
+                    <textarea name="comments-questions" form="join-form"></textarea>
+                </div>
+            </div>
+            <div class="submit-button-holder center-row-flex">
+                <div class="submit-button column-center-flex" onclick="document.getElementById('join-form').submit();">Submit</div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

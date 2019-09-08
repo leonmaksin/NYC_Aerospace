@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NYC Aerospace | {% block title %}{% endblock %}</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        {% block meta %}
+        
+        {% endblock %}
+        <!-- tags for creating tab icon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+        <link rel="manifest" href="/static/site.webmanifest">
+        <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+
+        <!-- Load in css -->
+        <link href="/static/styles.css" rel="stylesheet"/>
+        <link href="/static/hamburgers.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <!-- Load in JS -->
+        <!-- TODO: Optimize for search engines -->
+
+    </head>
+    <body>
+        <header id="header" class="center-row-flex">
+            <div id="logo-holder" class="column-center-flex">
+              <div class="column-center-flex" style="height: 100%">
+                <a href="/" id="nav-logo-txt">NYC Aerospace</a>
+              </div>
+            </div>
+            <div class="mobile-dropdown-holder">
+              <div id="trigger" class="hamburger hamburger--emphatic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
+            <div id="nav-links-holder" class="start-row-flex">
+                <div class="nav-link-holder"><a class="nav-link" href="/tarc">TARC</a></div>
+                <div class="nav-link-holder"><a class="nav-link" href="/cubesat">CubeSAT</a></div>
+                <div class="nav-link-holder"><a class="nav-link" href="/rocketry">High-Power Rocketry</a></div>
+                <div class="nav-link-holder"><a class="nav-link" href="/electronic-vehicles">Electronic Vehicles</a></div>
+                <div class="nav-link-holder"><a class="nav-link" href="/rocked">RockED</a></div>
+                <div id="nav-hooks-holder" class="end-row-flex">
+                    <div class="nav-hook-holder"><a class="nav-hook nav-link" href="/join">Join</a></div>
+                    <div class="nav-hook-holder"><a class="nav-hook nav-link" href="/contact">Contact</a></a></div>
+                    <div class="nav-hook-holder"><a class="nav-hook nav-link" href="/our-team">Our Team</a></div>
+                    <div class="nav-hook-holder"><a class="nav-hook nav-link" href="/sponsor">Sponsor</a></div>
+                </div>
+            </div>
+        </header>
+        <header style="display: none;" id="mobile-header" class="full-width full-height column-start-flex">
+          <div class="column-start-flex">
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/tarc">TARC</a></div>
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/cubesat">CubeSAT</a></div>
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/rocketry">High-Power Rocketry</a></div>
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/electronic-vehicles">Electronic Vehicles</a></div>
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/rocked">RockED</a></div>
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/join">Join</a></div>
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/contact">Contact</a></a></div>
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/our-team">Our Team</a></div>
+            <div class="nav-link-holder full-width center-row-flex"><a class="nav-link" href="/sponsor">Sponsor</a></div>
+          </div>
+        </header>
+        <div id="body-root">
+            {% block main %}{% endblock %}
+        </div>
+    </body>
+    <script src="/static/mobile.js"></script>
+</html>

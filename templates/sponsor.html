@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block title %}Sponsor{% endblock %}
+{% block main %}
+<p id="sponsor-text" class="project-description">Thank you for visiting our sponsor page. As a non for profit organization we need all the funding we can get to create opportunities for New York City students. We require funding to provide materials for our multiple projects, allow us to make trips to launch locations, pay for backend costs, and pay for legal costs. If you are interested in partnering with us please fill out the short form below and we'll get back to you to schedule a meeting to discuss our partnership.</p>
+<div id="form-div-holder" class="full-width center-row-flex">
+    <form id="sponsor-form" action="/sponsor" method="POST" class="form column-start-flex">
+        <div id="form-title">Sponsor Us</div>
+        <div id="inputs-holder" class="column-start-flex">
+            <div class="names-inputs-holder start-row-flex">
+                <div class="fname-input-holder column-start-flex">
+                    <div class="input-title start-row-flex">First Name</div>
+                    <div class="input-holder">
+                        <input class="name-input" type="text" autocapitalize name="firstname" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="lname-input-holder column-start-flex">
+                    <div class="input-title start-row-flex">Last Name</div>
+                    <div class="input-holder">
+                        <input class="name-input" type="text" autocapitalize name="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+            </div>
+            <div class="email-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Email</div>
+                <div class="input-holder">
+                    <input class="email-input" name="email" type="email" placeholder="example@stuy.edu">
+                </div>
+            </div>
+            <div class="email-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Company Name</div>
+                <p style="font-size: 10px; margin:0px;">Please write &quot N&sol;A&quot if you are sponsering as an individual</p>
+                <div class="input-holder">
+                    <input class="email-input" name="c_name" type="email" placeholder="Money Corp.">
+                </div>
+            </div>
+            <div class="textarea-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">If applicable, how would you like us to promote your company?</div>
+                <div class="input-holder" style="width: 100%">
+                    <textarea name="promotions" form="sponsor-form"></textarea>
+                </div>
+            </div>
+            <div class="textarea-input-holder input-group-holder column-start-flex">
+                <div class="input-title start-row-flex">Any other questions or comments?</div>
+                <div class="input-holder" style="width: 100%">
+                    <textarea name="message" form="sponsor-form"></textarea>
+                </div>
+            </div>
+            <div class="submit-button-holder center-row-flex">
+                <div class="submit-button column-center-flex" onclick="document.getElementById('sponsor-form').submit();">Submit</div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
