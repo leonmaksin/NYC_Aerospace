@@ -529,6 +529,9 @@ textarea:focus {
   #header {
     height: 8vh;
   }
+  .gate-button {
+    font-size: 2vw;
+  }
   input {
     width: 20vw;
   }
