@@ -139,7 +139,7 @@ def tarc():
 @app.route("/electronic-vehicles")
 def electronic_vehicles():
     """TODO: return electronic vehicles info page"""
-    return render_template("coming_soon.html")
+    return render_template("ev.html")
 
 @app.route("/rocked")
 def rocked():
