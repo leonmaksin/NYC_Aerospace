@@ -200,6 +200,12 @@ body {
     background-position: 50% 15%;
     background-size: cover;
 }
+#ev-splash {
+    background-image: url('/static/drone.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    background-size: cover;
+}
 #tarc-splash {
     background-image: url('/static/TARC_launch.jpeg');
      background-position: 50% 50%;
