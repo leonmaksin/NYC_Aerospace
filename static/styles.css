@@ -208,10 +208,18 @@ body {
 }
 #tarc-splash {
     background-image: url('/static/TARC_launch.jpeg');
-     background-position: 50% 50%;
-     background-size: cover;
-     background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+#rocked-splash {
+   background-image: url('/static/rocked.jpg');
+   background-repeat: no-repeat;
+   background-position: 50% 15%;
+   background-size: cover;
+}
+
 .splash-info-holder {
     padding-bottom: 10vh;
 }
