@@ -214,7 +214,7 @@ body {
 }
 
 #rocked-splash {
-   background-image: url('/static/Chalkboard.jpeg');
+   background-image: url('/static/');
    background-repeat: no-repeat;
    background-position: 50% 15%;
    background-size: cover;
