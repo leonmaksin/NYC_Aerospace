@@ -136,15 +136,15 @@ def tarc():
     """Return tarc info page"""
     return render_template("tarc.html")
 
-@app.route("/electronic-vehicles")
-def electronic_vehicles():
-    """TODO: return electronic vehicles info page"""
+@app.route("/electronics")
+def electronics():
+    """Return electronics info page"""
     return render_template("ev.html")
 
 @app.route("/rocked")
 def rocked():
-    """TODO: return RockED info page"""
-    return render_template("coming_soon.html")
+    """Return RockED info page"""
+    return render_template("rocked.html")
 
 @app.route("/summer-program")
 def summer_program():
