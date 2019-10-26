@@ -114,6 +114,7 @@ body {
     z-index: 1000;
 }
 #body-root {
+    margin-top: 7vh;
     max-width: 100vw;
     overflow-x: hidden;
 }
