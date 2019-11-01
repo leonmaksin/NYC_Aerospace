@@ -209,6 +209,12 @@ body {
     background-position: 50% 15%;
     background-size: cover;
 }
+#iav-splash {
+  background-image: url('/static/iav.jpeg');
+  background-repeat: no-repeat;
+  background-position: 50% 15%;
+  background-size: cover;
+}
 #tarc-splash {
     background-image: url('/static/TARC_launch.jpeg');
     background-position: 50% 50%;

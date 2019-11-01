@@ -131,6 +131,11 @@ def cubesat():
     """Return cubesat info page"""
     return render_template("cubesat.html")
 
+@app.route("/iav")
+def iav():
+    """Return iav info page"""
+    return render_template("iav.html")
+
 @app.route("/tarc")
 def tarc():
     """Return tarc info page"""
