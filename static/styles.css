@@ -456,6 +456,7 @@ select:focus {
 .mission-holder {
     padding-left: 1.5vw;
     padding-right: 1.5vw;
+    height: 45vh;
 }
 .mission-content {
     width: 20vw;
@@ -547,8 +548,23 @@ textarea:focus {
     padding-left: 5vw;
     height: 25vh;
   }
+  .more-info-page {
+    margin-left: 70px;
+    margin-top: auto;
+  }
+  #regular-text {
+    padding-left: 30px;
+    padding-right: 100px;
+    font-size: 20px;
+  }
 }
 @media screen and (max-aspect-ratio: 1/1) {
+  .more-info-page {
+    margin: 0;
+  }
+  #regular-text {
+    padding: 0;
+  }
   #header {
     height: 8vh;
   }
@@ -653,6 +669,7 @@ textarea:focus {
   }
   .mission-holder {
     width: 100vw;
+    height: auto;
   }
   #mobile-header {
     position: fixed;
@@ -696,16 +713,6 @@ textarea:focus {
   width: 60vw;
 }
 
-.more-info-page {
-  margin-left: 70px;
-  margin-top: auto;
-}
-
-#regular-text {
-  padding-left: 30px;
-  padding-right: 100px;
-  font-size: 20px;
-}
 
 .schedule-date {
   font-size: 25px;
