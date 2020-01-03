@@ -141,7 +141,7 @@ def tarc():
     """Return tarc info page"""
     return render_template("tarc.html")
 
-@app.route("/electronics")
+@app.route("/incubator")
 def electronics():
     """Return electronics info page"""
     return render_template("ev.html")
