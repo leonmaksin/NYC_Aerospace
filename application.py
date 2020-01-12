@@ -144,7 +144,7 @@ def tarc():
 @app.route("/incubator")
 def electronics():
     """Return electronics info page"""
-    return render_template("ev.html")
+    return render_template("incubator.html")
 
 @app.route("/rocked")
 def rocked():

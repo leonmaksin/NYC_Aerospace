@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block title %}Aerospace Incubator{% endblock %}
+{% block meta %}
+<meta name="description" content="NYC Aerospace is a non-profit organization based in New York that designs and builds high power rockets">
+{% endblock %}
+{% block main %}
+<div id="incubator-splash" class="splash-screen column-end-flex" style="display: -webkit-flex; display: -ms-flexbox; display: flex;">
+    <div class="splash-info-holder full-width column-end-flex">
+        <div class="splash-header full-width center-row-flex" style="color: ##e8e8e8"><h1>Helping aspiring engineers develop products</h1></div>
+        <div class="center-row-flex full-width">
+            <a href="/join" style="text-decoration: none;"><div class="dark splash-button">Get involved</div></a>
+        </div>
+    </div>
+</div>
+<!--<div id="projects-holder" class="full-width center-row-flex">-->
+<div id="home-content" class="full-width column-start-flex">
+    <div id="content-title-main" class="full-width center-row-flex"><h1>Our Mission</h1></div>
+    <p id="about-us" class="project-description" style="font-size:20px; text-align: justify;">NYC Aerospace's incubator is one of our most ambitious projects. We aim to guide students through ambitious projects, using our experience, connections, and resources in aerospace to turn great thinkers into entrepreneurs. We aspire to help young, often first time, entrepreneurs and engineers address real world problems by creating new products with a focus on Aerospace engineering. We hope to help students with inspiring ideas make their visions into realities, and offer support to students who have a vision to change the world.</p>
+
+    <div id="content-title-main" class="full-width center-row-flex"
+      <h1>Project Highlight: BEEBOS</h1>
+    </div>
+    <div class="full-width center-row-flex">
+      <img src="static/philip_paterson.jpg" class="philip-img" style="margin-left:15vw; margin-right:3vw;">
+      <p id="example-paragraph">Meet Philip Paterson, a Junior at Stuyvesant High School and the lead developer of the BEEBOS project. From as long as I can remember, I have always had an insatiable curiosity about things around me, and space was one of the most intriguing areas one could hope to explore. But just learning didn’t suffice, and aerospace entrepreneurship was my calling. That’s why I joined NYC Aerospace: to pursue that need for action.</p>
+    </div>
+    <p class="center-row-flex" id="example-paragraph" style="margin-left:15vw;">BEEBOS are self-assembling cube-shaped autonomous robots with modular faces. They’re used as platforms for implementing different instruments to perform a variety of tasks. From spectrometry to the assembly of large structures in space, BEEBOS are a cheaper option for any robotic venture in space. They use cold-gas propulsion, which allows 6 degrees of freedom, and link using electromagnets. 5 out of the 6 faces have removable sections where you can insert any instrument you desire. The versatility of the Beebos is second-to-none and will become the future of autonomous robotics in space.</p>
+
+
+    <div id="content-title-main" class="full-width center-row-flex">Also Check Out:</div>
+    <div id="projects-holder" class="full-width center-row-flex">
+        <div class="project column-start-flex">
+            <a href="/iav" style="display: block; text-decoration: none; text-color: black;">
+                <div class="project-title">Intelligent Aerial Vehicles</div>
+                <img class="project-img" src="/static/plane.jpg">
+                <div class="project-description">Utilizing artificial inteligence and machine learning to develop medicine-delivering drones.</div>
+                <p class="project-link">Learn more &#8594;</p>
+            </a>
+        </div>
+        <div class="project column-start-flex">
+            <a href="/summer-program" style="display: block; text-decoration: none; text-color: black;">
+                <div class="project-title">Railgun Rocket Launch Initiative</div>
+                <img class="project-img" src="/static/railgun.jpg">
+                <div class="project-description">Using electromagnetic force to launch high velocity rockets into space.</div>
+                <p class="project-link">Learn more &#8594;</p>
+            </a>
+        </div>
+      </div>
+</div>
+{% endblock %}

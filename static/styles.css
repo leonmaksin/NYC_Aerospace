@@ -102,6 +102,9 @@ body {
 .full-width {
     width: 100vw;
 }
+.fullish-width {
+    width: 70vw;
+}
 #header {
     height: 10vh;
     width: 100vw;
@@ -113,9 +116,15 @@ body {
     color: white;
     z-index: 1000;
 }
+
 .city-img {
   width: 60vw;
 }
+
+.philip-img {
+  width: 7vw;
+}
+
 #body-root {
     margin-top: 7vh;
     max-width: 100vw;
@@ -227,6 +236,12 @@ body {
    background-repeat: no-repeat;
    background-position: 50% 15%;
    background-size: cover;
+}
+#incubator-splash {
+    /* background-image: url('/static/drone.jpg'); */
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    background-size: cover;
 }
 
 .splash-info-holder {
@@ -514,6 +529,11 @@ textarea:focus {
   margin-right: 200px;
   margin-top: 60px;
   text-align: center;
+}
+#example-paragraph{
+  margin-right:15vw;
+  text-align:justify;
+  font-size:20px;"
 }
 .mission-p {
   text-align: justify;
