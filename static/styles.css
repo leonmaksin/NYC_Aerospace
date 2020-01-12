@@ -238,10 +238,10 @@ body {
    background-size: cover;
 }
 #incubator-splash {
-    /* background-image: url('/static/drone.jpg'); */
+    background-image: url('/static/incubator.jpg');
     background-repeat: no-repeat;
     background-position: 50% 15%;
-    background-size: cover;
+    background-size: 100vh;
 }
 
 .splash-info-holder {
