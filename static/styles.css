@@ -19,6 +19,10 @@ body {
     -ms-box-align: center;
     align-items: center;
 }
+#embedPDF {
+  align-self: center;
+  margin: 15px;
+}
 .start-row-flex {
     display: -webkit-flex;
     display: -ms-flexbox;
