@@ -569,6 +569,12 @@ textarea:focus {
   .mobile-dropdown-holder {
     display: none;
   }
+  #embedPDF {
+    display: none;
+  }
+  .mobile-pdf-link {
+    text-decoration: none;
+  }
   .mission-content-holder-2 {
     padding-left: 5vw;
     height: 25vh;
@@ -586,6 +592,9 @@ textarea:focus {
 @media screen and (max-aspect-ratio: 1/1) {
   .more-info-page {
     margin: 0;
+  }
+  .mobile-pdf-link {
+    display: none;
   }
   #regular-text {
     padding: 0;
