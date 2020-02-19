@@ -582,6 +582,9 @@ textarea:focus {
     padding-right: 100px;
     font-size: 20px;
   }
+  .mobile-pdf-link {
+    display: none;
+  }
 }
 @media screen and (max-aspect-ratio: 1/1) {
   .more-info-page {
@@ -601,6 +604,12 @@ textarea:focus {
   }
   #body-root {
     margin-top: 8vh
+  }
+  #embedPDF {
+    display: none;
+  }
+  .mobile-pdf-link {
+    text-decoration: none;
   }
   #nav-logo-txt {
     font-size: 18px;
