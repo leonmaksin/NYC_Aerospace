@@ -131,15 +131,20 @@ def cubesat():
     """Return cubesat info page"""
     return render_template("cubesat.html")
 
+@app.route("/iav")
+def iav():
+    """Return iav info page"""
+    return render_template("iav.html")
+
 @app.route("/tarc")
 def tarc():
     """Return tarc info page"""
     return render_template("tarc.html")
 
-@app.route("/electronic-vehicles")
-def electronic_vehicles():
-    """Return electronic vehicles info page"""
-    return render_template("ev.html")
+@app.route("/incubator")
+def electronics():
+    """Return electronics info page"""
+    return render_template("incubator.html")
 
 @app.route("/rocked")
 def rocked():
