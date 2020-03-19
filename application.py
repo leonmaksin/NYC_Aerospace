@@ -52,8 +52,8 @@ def join():
                 return render_template("corp_join.html")
             if request.args.get("type") == "individual":
                 return render_template("individual_join.html")
-            if request.args.get("type") == "team":
-                return render_template("team_join.html")
+            if request.args.get("type") == "school":
+                return render_template("school_join.html")
         else:
             return render_template("join_gate.html")
     elif request.method == "POST":
