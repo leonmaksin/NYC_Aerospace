@@ -48,17 +48,17 @@ def join():
     """Return join page"""
     if request.method == "GET":
         if request.args.get("type"):
-            if request.args.get("type") == "school":
-                return render_template("school_join.html")
-            if request.args.get("type") == "student":
-                return render_template("student_join.html")
+            if request.args.get("type") == "corporation":
+                return render_template("corp_join.html")
+            if request.args.get("type") == "individual":
+                return render_template("individual_join.html")
             if request.args.get("type") == "team":
                 return render_template("team_join.html")
         else:
             return render_template("join_gate.html")
     elif request.method == "POST":
         if request.form.get("type"):
-            if request.form.get("type") == "school":
+            if request.form.get("type") == "corporation":
                 name = "Name: " + str(request.form.get("firstname")) + " " + str(request.form.get("lastname"))
                 email = "Email: " + str(request.form.get("email"))
                 school = "School: " + str(request.form.get("school"))
@@ -77,10 +77,10 @@ def join():
                 helpers.sendmail(contents, "New school join form submission", "lmaksin00@stuy.edu")
                 helpers.sendmail(contents, "New school join form submission", "nycaerospace@gmail.com")
                 return render_template("success.html")
-            if request.form.get("type") == "student":
+            if request.form.get("type") == "individual":
                 name = "Name: " + str(request.form.get("firstname")) + " " + str(request.form.get("lastname"))
                 email = "Email: " + str(request.form.get("email"))
-                school = "School: " + str(request.form.get("school"))
+                school = "Association: " + str(request.form.get("school"))
                 student_address = "Student Address: " + str(request.form.get("address"))
                 tarc = "Tarc: " + str(request.form.get("tarc"))
                 rocked = "RockED: " + str(request.form.get("rocked"))

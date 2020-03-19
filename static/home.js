@@ -1,7 +1,7 @@
 function slide() {
     console.log('slide')
-    themes = ["rocketry-splash", "cubesat-splash", "tarc-splash"];
-    var index = (parseInt(document.getElementById('index').innerHTML) + 1) % 3;
+    themes = ["rocketry-splash", "tarc-splash"];
+    var index = (parseInt(document.getElementById('index').innerHTML) + 1) % 2;
     document.getElementById('index').innerHTML = index;
     for (i = 0; i < themes.length; i++) {
         if (i == index) {
@@ -11,4 +11,4 @@ function slide() {
         }
     }
 }
-var interval= window.setInterval(slide, 15000);
+var interval = window.setInterval(slide, 15000);
