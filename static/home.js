@@ -1,6 +1,6 @@
 function slide() {
     console.log('slide')
-    themes = ["rocketry-splash", "tarc-splash"];
+    themes = ["rocketry-splash", "cubesat-splash", "tarc-splash"];
     var index = (parseInt(document.getElementById('index').innerHTML) + 1) % 2;
     document.getElementById('index').innerHTML = index;
     for (i = 0; i < themes.length; i++) {
