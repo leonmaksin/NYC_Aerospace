@@ -171,9 +171,9 @@ def contact():
         file = open(path, "w+")
         file.write(contents)
         file.close()
-        helpers.sendmail(contents, "New contact form submission", "slarbi10@stuy.edu")
-        helpers.sendmail(contents, "New contact form submission", "lmaksin00@stuy.edu")
-        helpers.sendmail(contents, "New contact form submission", "nycaerospace@gmail.com")
+        # helpers.sendmail(contents, "New contact form submission", "slarbi10@stuy.edu")
+        # helpers.sendmail(contents, "New contact form submission", "lmaksin00@stuy.edu")
+        # helpers.sendmail(contents, "New contact form submission", "nycaerospace@gmail.com")
         return render_template("success.html")
 
 @app.route("/sponsor", methods=["GET", "POST"])
