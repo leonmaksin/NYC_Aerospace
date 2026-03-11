@@ -63,3 +63,8 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Local machine and cache artifacts
+.npm-cache/
+__pycache__/
+.DS_Store
